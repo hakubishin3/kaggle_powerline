@@ -1,0 +1,49 @@
+
+{
+    "features": [
+        "Meta"
+    ],
+    "cv": {
+        "method": "StratifiedKFold",
+        "n_splits": 4,
+        "random_state": 71
+    },
+    "model": {
+        "lr": 0.001,
+        "batch_size": 16,
+        "epochs": 100,
+        "dropout": 0.0,
+        "k": 2,
+        "cyclic_shift__alpha": 0.0,
+        "skew__skew": 0.00,
+        "repetitions": [2, 2, 2, 2],
+        "early_stopping_patience": 60
+    },
+    "dataset": {
+        "input_directory": "data/input/",
+        "intermediate_directory": "data/interim/",
+        "feature_directory": "data/feature/",
+        "output_directory": "data/output/",
+        "files": {
+            "meta":{
+                "train": "metadata_train.csv",
+                "test": "metadata_test.csv"
+            },
+            "ts":{
+                "train": "train.parquet",
+                "test": "test.parquet"
+            }
+        }
+    },
+    "pre-processing": {
+        "negative_down_sampling": {
+            "enabled": false,
+            "bagging_size": 5
+        }
+    },
+    "post-processing": {
+        "majority_rule": {
+            "enabled": false
+        }
+    }
+}

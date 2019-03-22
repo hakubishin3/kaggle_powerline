@@ -1,0 +1,19 @@
+# data file
+*csv
+*gz
+*pkl
+*ftr
+*npz
+*npy
+*parquet
+*out
+*hdf5
+*log
+*org
+
+# python
+__pycache__/
+
+# jupyter notebook
+.ipynb_checkpoints
+
