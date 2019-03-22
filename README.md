@@ -1,1 +1,3 @@
 # kaggle_powerline
+
+LSTM model (notebooks/kernel_5-fold_LSTM_with_threshold_tuning_v1.51.ipynb) is the best model (Public:0.677, Private:0.685), but I did not choose this for final submission ...
